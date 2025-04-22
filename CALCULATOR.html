@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    function add() { 
+        var num1, num2;
+        num1 = Number(document.form1.txtNum1.value);
+        num2 = Number(document.form1.txtNum2.value);
+        document.form1.txtSum.value = num1 + num2;
+    }
+
+    function subtract() { 
+        var num1, num2;
+        num1 = Number(document.form1.txtNum1.value);
+        num2 = Number(document.form1.txtNum2.value);
+        document.form1.txtSum.value = num1 - num2;
+    }
+
+    function multiply() { 
+        var num1, num2;
+        num1 = Number(document.form1.txtNum1.value);
+        num2 = Number(document.form1.txtNum2.value);
+        document.form1.txtSum.value = num1 * num2;
+    }
+
+    function divide() { 
+        var num1, num2;
+        num1 = Number(document.form1.txtNum1.value);
+        num2 = Number(document.form1.txtNum2.value);
+	 document.form1.txtSum.value = num1 / num2;
+           }
+</script>
+
+<form name="form1">
+    Enter Operand 1:
+    <input type="text" name="txtNum1" size="8"><br><br>
+    Enter Operand 2:
+    <input type="text" name="txtNum2" size="8"><br><br>
+    
+    <input type="button" value="+" onclick="add()">
+    <input type="button" value="-" onclick="subtract()">
+    <input type="button" value="*" onclick="multiply()">
+    <input type="button" value="/" onclick="divide()"><br><br>
+    
+    Result:
+    <input type="text" name="txtSum" readonly>
+</form>
+
+</body>
+</html>
